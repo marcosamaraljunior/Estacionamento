@@ -1,0 +1,195 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/marcosj/Documents/Development/Projects/Estacionamento/Servicos/Servicos.csproj": {}
+  },
+  "projects": {
+    "/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/Dominio.csproj",
+        "projectName": "Dominio",
+        "projectPath": "/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/Dominio.csproj",
+        "packagesPath": "/home/marcosj/.nuget/packages/",
+        "outputPath": "/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/marcosj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/Infraestrutura.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/Infraestrutura.csproj",
+        "projectName": "Infraestrutura",
+        "projectPath": "/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/Infraestrutura.csproj",
+        "packagesPath": "/home/marcosj/.nuget/packages/",
+        "outputPath": "/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/marcosj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/Dominio.csproj": {
+                "projectPath": "/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/marcosj/Documents/Development/Projects/Estacionamento/Servicos/Servicos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/marcosj/Documents/Development/Projects/Estacionamento/Servicos/Servicos.csproj",
+        "projectName": "Servicos",
+        "projectPath": "/home/marcosj/Documents/Development/Projects/Estacionamento/Servicos/Servicos.csproj",
+        "packagesPath": "/home/marcosj/.nuget/packages/",
+        "outputPath": "/home/marcosj/Documents/Development/Projects/Estacionamento/Servicos/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/marcosj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/Dominio.csproj": {
+                "projectPath": "/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/Dominio.csproj"
+              },
+              "/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/Infraestrutura.csproj": {
+                "projectPath": "/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/Infraestrutura.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/bin/Debug/netcoreapp3.1/Infraestrutura.deps.json
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/bin/Debug/netcoreapp3.1/Infraestrutura.dll
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/bin/Debug/netcoreapp3.1/Infraestrutura.pdb
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/obj/Debug/netcoreapp3.1/Infraestrutura.csprojAssemblyReference.cache
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/obj/Debug/netcoreapp3.1/Infraestrutura.AssemblyInfoInputs.cache
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/obj/Debug/netcoreapp3.1/Infraestrutura.AssemblyInfo.cs
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/obj/Debug/netcoreapp3.1/Infraestrutura.csproj.CoreCompileInputs.cache
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/obj/Debug/netcoreapp3.1/Infraestrutura.dll
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/obj/Debug/netcoreapp3.1/Infraestrutura.pdb
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/bin/Debug/netcoreapp3.1/Dominio.dll
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/bin/Debug/netcoreapp3.1/Dominio.pdb
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/obj/Debug/netcoreapp3.1/Infraestrutura.csproj.CopyComplete
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/bin/Debug/netcoreapp3.1/Infraestrutura.runtimeconfig.json
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/bin/Debug/netcoreapp3.1/Infraestrutura.runtimeconfig.dev.json
+/home/marcosj/Documents/Development/Projects/Estacionamento/Infraestrutura/obj/Debug/netcoreapp3.1/Infraestrutura.genruntimeconfig.cache

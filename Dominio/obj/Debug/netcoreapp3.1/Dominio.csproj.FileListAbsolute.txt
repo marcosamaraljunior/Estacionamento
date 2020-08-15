@@ -1,0 +1,9 @@
+/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/obj/Debug/netcoreapp3.1/Dominio.csprojAssemblyReference.cache
+/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/obj/Debug/netcoreapp3.1/Dominio.AssemblyInfoInputs.cache
+/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/obj/Debug/netcoreapp3.1/Dominio.AssemblyInfo.cs
+/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/obj/Debug/netcoreapp3.1/Dominio.csproj.CoreCompileInputs.cache
+/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/bin/Debug/netcoreapp3.1/Dominio.deps.json
+/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/bin/Debug/netcoreapp3.1/Dominio.dll
+/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/bin/Debug/netcoreapp3.1/Dominio.pdb
+/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/obj/Debug/netcoreapp3.1/Dominio.dll
+/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/obj/Debug/netcoreapp3.1/Dominio.pdb

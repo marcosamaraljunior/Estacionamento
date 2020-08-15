@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HPnZP1TNi2sOP/zNWy4+xazhqALCSWbFvXG9xUT8/MECtgy9taomBjJ/lIxaH6/ykMaBs6ndw+ZzNrXwvQsAZQ==",
+  "success": true,
+  "projectFilePath": "/home/marcosj/Documents/Development/Projects/Estacionamento/Dominio/Dominio.csproj",
+  "expectedPackageFiles": [
+    "/home/marcosj/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
