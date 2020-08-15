@@ -20,15 +20,15 @@ namespace Api.Controlles
         public async Task<IActionResult> Post([FromBody] CarroDTO carro)
         {
 
-            var resultado = await _gerenciadorEstadia.EntrarCarro(carro.Placa);
+            var retorno = await _gerenciadorEstadia.EntrarCarro(carro.Placa);
 
-            if (resultado.TemErro())
+            if (retorno.TemErro())
             {
-                return StatusCode(resultado.Erro.StatusCode, new { Mensagem = resultado.Erro.Mensagem });
+                return StatusCode(retorno.Erro.StatusCode, new { Mensagem = retorno.Erro.Mensagem });
             }
             else
             {
-                return Ok(resultado);
+                return Ok(retorno.Resultado);
             }
         }
 
@@ -36,15 +36,15 @@ namespace Api.Controlles
         public IActionResult GetByPlaca(string placa)
         {
 
-            var resultado = _gerenciadorEstadia.RetirarCarro(placa);
+            var retorno = _gerenciadorEstadia.RetirarCarro(placa);
 
-            if (resultado.TemErro())
+            if (retorno.TemErro())
             {
-                return StatusCode(resultado.Erro.StatusCode, new { Mensagem = resultado.Erro.Mensagem });
+                return StatusCode(retorno.Erro.StatusCode, new { Mensagem = retorno.Erro.Mensagem });
             }
             else
             {
-                return Ok(resultado);
+                return Ok(retorno.Resultado);
             }
 
         }

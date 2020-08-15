@@ -67,7 +67,40 @@ namespace Infraestrutura.Migrations
                     b.ToTable("Estadia");
                 });
 
+            modelBuilder.Entity("Dominio.Modelos.HistoricoEstadia", b =>
+                {
+                    b.Property<byte[]>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<byte[]>("CarroId")
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<DateTime>("Entrada")
+                        .HasColumnType("datetime");
+
+                    b.Property<DateTime?>("Saida")
+                        .IsRequired()
+                        .HasColumnType("datetime");
+
+                    b.Property<double>("Valor")
+                        .HasColumnType("double");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarroId");
+
+                    b.ToTable("Historico_Estadia");
+                });
+
             modelBuilder.Entity("Dominio.Modelos.Estadia", b =>
+                {
+                    b.HasOne("Dominio.Modelos.Carro", "Carro")
+                        .WithMany()
+                        .HasForeignKey("CarroId");
+                });
+
+            modelBuilder.Entity("Dominio.Modelos.HistoricoEstadia", b =>
                 {
                     b.HasOne("Dominio.Modelos.Carro", "Carro")
                         .WithMany()

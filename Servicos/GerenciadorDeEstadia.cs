@@ -55,16 +55,16 @@ namespace Servicos
             var estadia = _repoEstadia.BuscarPorPlaca(placa);
             var objResposta = new Resposta<Estadia>();
 
-            if (estadia.Saida == null)
+            if (estadia == null)
+            {
+                objResposta.Erro = new ErroObjetoInexistente("estadia", "placa");
+            }
+            else
             {
                 estadia.Saida = DateTime.Now;
                 estadia.Valor = GerarValorDeEstadia(estadia);
                 _repoEstadia.SalvarSaida(estadia);
                 objResposta.Resultado = estadia;
-            }
-            else
-            {
-                objResposta.Erro = new ErroObjetoInexistente("Estadia", "Placa");
             }
             return objResposta;
 

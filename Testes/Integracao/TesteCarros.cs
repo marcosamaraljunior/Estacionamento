@@ -16,7 +16,7 @@ namespace Testes.Integracao
             //Given
             var carro = new
             {
-                placa = "XXX-1254",
+                placa = "TTT-0001",
                 modelo = "Gol",
                 cor = "Prata",
                 tamanho = "Medio"
@@ -24,6 +24,8 @@ namespace Testes.Integracao
             //When
             var retorno = await _api.PostAsync("/carro", ConverterParaJSON<Object>(carro));
             var conteudo = retorno.Content.ReadAsStringAsync();
+
+            await _api.DeleteAsync("/carro/TTT-0001");  // REMOVER RASTROS
 
             //Then
             conteudo.Id.ToString().Should().NotBeNullOrEmpty();
@@ -34,16 +36,30 @@ namespace Testes.Integracao
         {
             //Given
 
+            var carroInsert = new
+            {
+                placa = "TTT-0002",
+                modelo = "Bora",
+                cor = "Preto",
+                tamanho = "Pequeno"
+            };
+            await _api.PostAsync("/carro", ConverterParaJSON<Object>(carroInsert));
+
+
             //When
-            var retorno = await _api.GetAsync("/carro/XXX-1254");
+            var retorno = await _api.GetAsync("/carro/TTT-0002");
             var carroJson = await retorno.Content.ReadAsStringAsync();
             var carro = Converter<Dictionary<string, string>>(carroJson);
+
+            await _api.DeleteAsync("/carro/TTT-0002");  // REMOVER RASTROS
             //Then
-            carro["placa"].Should().Be("XXX-1254");
-            carro["tamanho"].Should().Be("Medio");
-            carro["cor"].Should().Be("Prata");
+            carro["placa"].Should().Be("TTT-0002");
+            carro["tamanho"].Should().Be("Pequeno");
+            carro["cor"].Should().Be("Preto");
 
         }
+
+
         [Fact]
         public async Task Deve_Retornar_Uma_Lista_De_Carros()
         {
@@ -60,19 +76,22 @@ namespace Testes.Integracao
 
             var carro = new
             {
-                placa = "XXX-1256",
-                modelo = "Gol",
-                cor = "Prata",
-                tamanho = "Medio"
+                placa = "TTT-0003",
+                modelo = "Passat",
+                cor = "Branco",
+                tamanho = "Grande"
             };
 
-
+            await _api.PostAsync("/carro", ConverterParaJSON<Object>(carro));
             //When
+
 
             var retorno = await _api.PostAsync("/carro", ConverterParaJSON<Object>(carro));
             var conteudo = await retorno.Content.ReadAsStringAsync();
 
             var erro = Converter<Dictionary<string, string>>(conteudo);
+
+            await _api.DeleteAsync("/carro/TTT-0003");  // REMOVER RASTROS
 
             //Then
 

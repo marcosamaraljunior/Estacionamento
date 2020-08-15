@@ -33,8 +33,10 @@ namespace Estacionamento
             services.AddDbContext<Infraestrutura.Contextos.MyContext>(options => options.UseMySQL("Server=localhost;DataBase=Estacionamento;Uid=estacionamento;Pwd=1234"));
             services.AddScoped<Dominio.Interfaces.Infraestrutura.Repositorios.IRepoEstadia, Infraestrutura.Repositorios.RepositorioEstadia>();
             services.AddScoped<Dominio.Interfaces.Infraestrutura.Repositorios.IRepoCarros, Infraestrutura.Repositorios.RepositorioCarros>();
+            services.AddScoped<Dominio.Interfaces.Infraestrutura.Repositorios.IRepoHistoricoEstadias, Infraestrutura.Repositorios.RepositorioHistoricoEstadias>();
             services.AddScoped<Dominio.Interfaces.Servicos.IGerenciadorDeCarros, Servicos.GerenciadorDeCarros>();
             services.AddScoped<Dominio.Interfaces.Servicos.IGerenciadorDeEstadia, Servicos.GerenciadorDeEstadia>();
+            services.AddScoped<Dominio.Interfaces.Servicos.IGerenciadorHistoricoEstadias, Servicos.GerenciadorHistoricoEstadias>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -10,6 +10,8 @@ namespace Infraestrutura.Contextos
         {
         }
         DbSet<Estadia> Estadia { get; set; }
+        DbSet<Carro> Carro { get; set; }
+        DbSet<HistoricoEstadia> HistoricoEstadia { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -21,6 +23,7 @@ namespace Infraestrutura.Contextos
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Estadia>(new Mapeamentos.MapEstadia().Configure);
             modelBuilder.Entity<Carro>(new Mapeamentos.MapCarro().Configure);
+            modelBuilder.Entity<HistoricoEstadia>(new Mapeamentos.MapHistoricoEstadia().Configure);
         }
 
     }

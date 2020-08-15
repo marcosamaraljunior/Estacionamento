@@ -9,7 +9,7 @@ namespace Infraestrutura.Erros
 
         public ErroObjetoInexistente(string objeto, string atributo)
         {
-            Mensagem = $"Nao Existe {objeto} para esta(e) {atributo}.";
+            Mensagem = $"Nao existe {objeto} para esta(e) {atributo}.";
             StatusCode = 400;
         }
     }
